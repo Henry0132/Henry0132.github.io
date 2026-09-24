@@ -39,7 +39,7 @@ I am a first-year Ph.D. student at the School of Information and Control Enginee
 
 - `[2026] One paper accepted at NeurIPS 2026 as Poster.`（具体的月份待用户确认后填写）
 
-### 4. Publications（7 篇，按此顺序，作者本人加粗）
+### 4. Publications（6 篇，按此顺序，作者本人加粗）
 
 1. **Diffusion Subgoal Planning for Long-Horizon Offline Goal-Conditioned Reinforcement Learning**（新增）
    - Hengrui Zhang, Yuhu Cheng, C. L. Philip Chen, Xuesong Wang
