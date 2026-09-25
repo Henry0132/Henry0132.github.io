@@ -7,151 +7,165 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
+  <div class="layout">
+    <aside class="sidebar">
       <img src="photo.jpg" alt="Hengrui Zhang" class="avatar" onerror="this.style.display='none'">
       <h1>Hengrui Zhang</h1>
-      <p class="subtitle">Ph.D. Student @ <a href="https://www.cumt.edu.cn/">China University of Mining and Technology</a></p>
-      <p class="email">📧 hengruizhang@cumt.edu.cn &nbsp;|&nbsp; hengruizhang0132@gmail.com</p>
-    </header>
-
-    <section>
-      <h2>About</h2>
-      <p>
-        I am a first-year Ph.D. student at the School of Information and Control Engineering,
-        <a href="https://www.cumt.edu.cn/">China University of Mining and Technology</a> (CUMT), born on March 2, 2001.
-        My research focuses on offline reinforcement learning, goal-conditioned reinforcement learning, and generative models.
-        I am advised by <a href="https://siee.cumt.edu.cn/info/1012/1025.htm">Prof. Xuesong Wang</a>.
+      <p class="affiliation">
+        Ph.D. Student<br>
+        <a href="https://www.cumt.edu.cn/">China University of Mining and Technology</a>
       </p>
-    </section>
-
-    <section>
-      <h2>Research Interests</h2>
-      <ul>
-        <li>Offline Reinforcement Learning</li>
-        <li>Goal-Conditioned Reinforcement Learning</li>
-        <li>Generative Models</li>
+      <ul class="sidebar-links">
+        <li><a href="mailto:hengruizhang@cumt.edu.cn">hengruizhang@cumt.edu.cn</a></li>
+        <li><a href="mailto:hengruizhang0132@gmail.com">hengruizhang0132@gmail.com</a></li>
+        <li><a href="https://github.com/Henry0132">GitHub</a></li>
+        <li><a href="https://scholar.google.com.hk/citations?user=PFxa-9YAAAAJ&hl=zh-CN">Google Scholar</a></li>
       </ul>
-    </section>
+    </aside>
 
-    <section>
-      <h2>Education</h2>
-      <div class="entry">
-        <div class="entry-left">
-          <strong>Ph.D. in Control Science and Engineering</strong><br>
-          <span class="school"><a href="https://www.cumt.edu.cn/">China University of Mining and Technology</a></span>
-        </div>
-        <div class="entry-right">
-          <span class="dates">2025 — Present</span>
-        </div>
-      </div>
-      <div class="entry">
-        <div class="entry-left">
-          <strong>M.Sc. in Control Science and Engineering</strong><br>
-          <span class="school"><a href="https://www.cumt.edu.cn/">China University of Mining and Technology</a></span>
-        </div>
-        <div class="entry-right">
-          <span class="dates">2023 — 2025</span>
-        </div>
-      </div>
-      <div class="entry">
-        <div class="entry-left">
-          <strong>B.Sc. in Internet of Things Engineering</strong><br>
-          <span class="school"><a href="https://www.ycit.edu.cn/en/">Yancheng Institute of Technology</a></span>
-        </div>
-        <div class="entry-right">
-          <span class="dates">2019 — 2023</span>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Publications</h2>
-
-      <div class="pub">
-        <p class="pub-title">Return-Critic: Bridging Goal Discrepancy for Efficient Visual Reinforcement Learning</p>
-        <p class="pub-authors">Ruyi Lu, Xuesong Wang, <strong>Hengrui Zhang</strong>, Yuhu Cheng</p>
-        <p class="pub-venue"><em>International Conference on Machine Learning (ICML), 2026</em></p>
-        <p class="pub-links">
-          <a href="#">[paper]</a> <a href="#">[code]</a> <a href="#">[bibtex]</a>
+    <main class="main">
+      <section>
+        <h2>About</h2>
+        <p>
+          I am a first-year Ph.D. student at the School of Information and Control Engineering,
+          <a href="https://www.cumt.edu.cn/">China University of Mining and Technology</a> (CUMT), born on March 2, 2001.
+          My research focuses on offline reinforcement learning, goal-conditioned reinforcement learning, and generative models.
+          I am advised by <a href="https://siee.cumt.edu.cn/info/1012/1025.htm">Prof. Xuesong Wang</a>.
         </p>
-      </div>
+      </section>
 
-      <div class="pub">
-        <p class="pub-title">PCDT: Pessimistic Critic Decision Transformer for Offline Reinforcement Learning</p>
-        <p class="pub-authors">Xuesong Wang, <strong>Hengrui Zhang</strong>, Jiazhi Zhang, C. L. Philip Chen, Yuhu Cheng</p>
-        <p class="pub-venue"><em>IEEE Transactions on Systems, Man, and Cybernetics: Systems, 2025, 55(10): 7247–7258</em></p>
-        <p class="pub-links">
-          <a href="https://doi.org/10.1109/TSMC.2025.3583392">[DOI]</a>
-        </p>
-      </div>
+      <section>
+        <h2>Research Interests</h2>
+        <ul>
+          <li>Offline Reinforcement Learning</li>
+          <li>Goal-Conditioned Reinforcement Learning</li>
+          <li>Generative Models</li>
+        </ul>
+      </section>
 
-      <div class="pub">
-        <p class="pub-title">Visual Reinforcement Learning Based on Multiview Optimization Aggregation</p>
-        <p class="pub-authors">Xuesong Wang, Ruyi Lu, <strong>Hengrui Zhang</strong>, Yuhu Cheng</p>
-        <p class="pub-venue"><em>IEEE Transactions on Cognitive and Developmental Systems, 2025, 17(4): 1011–1021</em></p>
-        <p class="pub-links">
-          <a href="https://doi.org/10.1109/TCDS.2025.3540115">[DOI]</a>
-        </p>
-      </div>
+      <section>
+        <h2>News</h2>
+        <ul class="news-list">
+          <li><span class="news-date">[2026]</span><span>One paper accepted at NeurIPS 2026 as Poster.</span></li>
+        </ul>
+      </section>
 
-      <div class="pub">
-        <p class="pub-title">Diffusion Policy Distillation for Offline Reinforcement Learning</p>
-        <p class="pub-authors">Jiazhi Zhang, Yuhu Cheng, C. L. Philip Chen, <strong>Hengrui Zhang</strong>, Xuesong Wang</p>
-        <p class="pub-venue"><em>Neural Networks, 2025, 190: 107694</em></p>
-        <p class="pub-links">
-          <a href="https://doi.org/10.1016/j.neunet.2025.107694">[DOI]</a>
-        </p>
-      </div>
+      <section>
+        <h2>Publications</h2>
 
-      <div class="pub">
-        <p class="pub-title">Offline Reinforcement Learning Based on Advantage-Constrained Diffusion Policy</p>
-        <p class="pub-authors">Xuesong Wang, <strong>Hengrui Zhang</strong>, Jiazhi Zhang, Yuhu Cheng</p>
-        <p class="pub-venue"><em>Control and Decision, 2025, 40(06): 1903–1912</em></p>
-        <p class="pub-links">
-          <a href="https://doi.org/10.13195/j.kzyjc.2024.0618">[DOI]</a>
-        </p>
-      </div>
-    </section>
+        <div class="pub">
+          <p class="pub-title">Diffusion Subgoal Planning for Long-Horizon Offline Goal-Conditioned Reinforcement Learning</p>
+          <p class="pub-authors"><strong>Hengrui Zhang</strong>, Yuhu Cheng, C. L. Philip Chen, Xuesong Wang</p>
+          <p class="pub-venue"><em>Conference on Neural Information Processing Systems (NeurIPS), 2026 (Poster)</em></p>
+        </div>
 
-    <section>
-      <h2>Honors &amp; Awards</h2>
+        <div class="pub">
+          <p class="pub-title">Return-Critic: Bridging Goal Discrepancy for Efficient Visual Reinforcement Learning</p>
+          <p class="pub-authors">Ruyi Lu, Xuesong Wang, <strong>Hengrui Zhang</strong>, Yuhu Cheng</p>
+          <p class="pub-venue"><em>International Conference on Machine Learning (ICML), 2026</em></p>
+          <p class="pub-links">
+            <a href="#">[paper]</a> <a href="#">[code]</a> <a href="#">[bibtex]</a>
+          </p>
+        </div>
 
-      <p class="award-period">Ph.D.</p>
-      <ul>
-        <li>First-Class Entrance Scholarship</li>
-      </ul>
+        <div class="pub">
+          <p class="pub-title">PCDT: Pessimistic Critic Decision Transformer for Offline Reinforcement Learning</p>
+          <p class="pub-authors">Xuesong Wang, <strong>Hengrui Zhang</strong>, Jiazhi Zhang, C. L. Philip Chen, Yuhu Cheng</p>
+          <p class="pub-venue"><em>IEEE Transactions on Systems, Man, and Cybernetics: Systems, 2025, 55(10): 7247–7258</em></p>
+          <p class="pub-links">
+            <a href="https://doi.org/10.1109/TSMC.2025.3583392">[DOI]</a>
+          </p>
+        </div>
 
-      <p class="award-period">M.Sc.</p>
-      <ul>
-        <li>Second-Class Entrance Scholarship</li>
-        <li>Second-Class Academic Scholarship</li>
-      </ul>
+        <div class="pub">
+          <p class="pub-title">Visual Reinforcement Learning Based on Multiview Optimization Aggregation</p>
+          <p class="pub-authors">Xuesong Wang, Ruyi Lu, <strong>Hengrui Zhang</strong>, Yuhu Cheng</p>
+          <p class="pub-venue"><em>IEEE Transactions on Cognitive and Developmental Systems, 2025, 17(4): 1011–1021</em></p>
+          <p class="pub-links">
+            <a href="https://doi.org/10.1109/TCDS.2025.3540115">[DOI]</a>
+          </p>
+        </div>
 
-      <p class="award-period">B.Sc.</p>
-      <ul>
-        <li>National Scholarship</li>
-        <li>National Endeavor Scholarship</li>
-        <li>Yancheng "Yellow Sea Pearl" Scholarship</li>
-        <li>First-Class Academic Scholarship ×8</li>
-        <li>National Second Prize, 17th "Challenge Cup"</li>
-        <li>National Third Prize, China College Student Computer Design Competition</li>
-        <li>National Second Prize, China College Student Computer Design Competition (Preliminary)</li>
-      </ul>
-    </section>
+        <div class="pub">
+          <p class="pub-title">Diffusion Policy Distillation for Offline Reinforcement Learning</p>
+          <p class="pub-authors">Jiazhi Zhang, Yuhu Cheng, C. L. Philip Chen, <strong>Hengrui Zhang</strong>, Xuesong Wang</p>
+          <p class="pub-venue"><em>Neural Networks, 2025, 190: 107694</em></p>
+          <p class="pub-links">
+            <a href="https://doi.org/10.1016/j.neunet.2025.107694">[DOI]</a>
+          </p>
+        </div>
 
-    <section>
-      <h2>Contact</h2>
-      <ul class="contact-list">
-        <li>Email: hengruizhang@cumt.edu.cn / hengruizhang0132@gmail.com</li>
-        <li>GitHub: <a href="https://github.com/Henry0132">github.com/Henry0132</a></li>
-        <li>Google Scholar: <a href="https://scholar.google.com.hk/citations?user=PFxa-9YAAAAJ&hl=zh-CN">Google Scholar</a></li>
-      </ul>
-    </section>
+        <div class="pub">
+          <p class="pub-title">Offline Reinforcement Learning Based on Advantage-Constrained Diffusion Policy</p>
+          <p class="pub-authors">Xuesong Wang, <strong>Hengrui Zhang</strong>, Jiazhi Zhang, Yuhu Cheng</p>
+          <p class="pub-venue"><em>Control and Decision, 2025, 40(06): 1903–1912</em></p>
+          <p class="pub-links">
+            <a href="https://doi.org/10.13195/j.kzyjc.2024.0618">[DOI]</a>
+          </p>
+        </div>
+      </section>
 
-    <footer>
-      <p>Last updated: May 2026</p>
-    </footer>
+      <section>
+        <h2>Education</h2>
+        <div class="entry">
+          <div class="entry-left">
+            <strong>Ph.D. in Control Science and Engineering</strong><br>
+            <span class="school"><a href="https://www.cumt.edu.cn/">China University of Mining and Technology</a></span>
+          </div>
+          <div class="entry-right">
+            <span class="dates">2025 — Present</span>
+          </div>
+        </div>
+        <div class="entry">
+          <div class="entry-left">
+            <strong>M.Sc. in Control Science and Engineering</strong><br>
+            <span class="school"><a href="https://www.cumt.edu.cn/">China University of Mining and Technology</a></span>
+          </div>
+          <div class="entry-right">
+            <span class="dates">2023 — 2025</span>
+          </div>
+        </div>
+        <div class="entry">
+          <div class="entry-left">
+            <strong>B.Sc. in Internet of Things Engineering</strong><br>
+            <span class="school"><a href="https://www.ycit.edu.cn/en/">Yancheng Institute of Technology</a></span>
+          </div>
+          <div class="entry-right">
+            <span class="dates">2019 — 2023</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Honors &amp; Awards</h2>
+
+        <p class="award-period">Ph.D.</p>
+        <ul>
+          <li>First-Class Entrance Scholarship</li>
+        </ul>
+
+        <p class="award-period">M.Sc.</p>
+        <ul>
+          <li>Second-Class Entrance Scholarship</li>
+          <li>Second-Class Academic Scholarship</li>
+        </ul>
+
+        <p class="award-period">B.Sc.</p>
+        <ul>
+          <li>National Scholarship</li>
+          <li>National Endeavor Scholarship</li>
+          <li>Yancheng "Yellow Sea Pearl" Scholarship</li>
+          <li>First-Class Academic Scholarship ×8</li>
+          <li>National Second Prize, 17th "Challenge Cup"</li>
+          <li>National Third Prize, China College Student Computer Design Competition</li>
+          <li>National Second Prize, China College Student Computer Design Competition (Preliminary)</li>
+        </ul>
+      </section>
+    </main>
   </div>
+
+  <footer>
+    <p>Last updated: September 2026</p>
+  </footer>
 </body>
 </html>
