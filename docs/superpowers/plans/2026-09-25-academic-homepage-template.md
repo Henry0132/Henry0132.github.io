@@ -244,7 +244,7 @@ footer {
 
 Run:
 ```powershell
-$css = Get-Content -Raw -LiteralPath "style.css"
+$css = Get-Content -Raw -Encoding UTF8 -LiteralPath "style.css"
 $open = ([regex]::Matches($css, '\{')).Count
 $close = ([regex]::Matches($css, '\}')).Count
 if ($open -eq $close) { "PASS: braces balanced ($open)" } else { "FAIL: $open open vs $close close" }
@@ -445,9 +445,9 @@ git commit -m "restyle: Classic Academic two-column layout"
 
 Run:
 ```powershell
-$html = Get-Content -Raw -LiteralPath "index.html"
+$html = Get-Content -Raw -Encoding UTF8 -LiteralPath "index.html"
 $needles = @(
-  "Hengrui Zhang",
+  'Hengrui Zhang',
   "Diffusion Subgoal Planning for Long-Horizon Offline Goal-Conditioned Reinforcement Learning",
   "NeurIPS), 2026 (Poster)",
   "One paper accepted at NeurIPS 2026 as Poster.",
@@ -465,7 +465,7 @@ $needles = @(
   "National Scholarship",
   "National Endeavor Scholarship",
   "First-Class Academic Scholarship ×8",
-  "National Second Prize, 17th \"Challenge Cup\"",
+  'National Second Prize, 17th "Challenge Cup"',
   "National Third Prize, China College Student Computer Design Competition",
   "National Second Prize, China College Student Computer Design Competition (Preliminary)",
   "hengruizhang@cumt.edu.cn",
@@ -493,12 +493,12 @@ Expected: `PASS: all content present` and `PASS: 6 publications`.
 
 Run:
 ```powershell
-$html = Get-Content -Raw -LiteralPath "index.html"
+$html = Get-Content -Raw -Encoding UTF8 -LiteralPath "index.html"
 $h2 = ([regex]::Matches($html, '<h2>')).Count
 $links = [regex]::Matches($html, 'href="([^"]*)"') | ForEach-Object { $_.Groups[1].Value }
-$bad = @($links | Where-Object { $_ -ne "#" -and $_ -notmatch '^(https?://|mailto:)' })
+$bad = @($links | Where-Object { $_ -ne "#" -and $_ -notmatch '^(https?://|mailto:|[^:]*$)' })
 if ($h2 -eq 6) { "PASS: 6 sections" } else { "FAIL: $h2 sections" }
-if ($bad.Count -eq 0) { "PASS: all $($links.Count) links valid ($(($links | Where-Object { $_ -ne '#' }).Count) real, $(($links | Where-Object { $_ -eq '#' }).Count) placeholders)" } else { "FAIL: $($bad -join ' | ')" }
+if ($bad.Count -eq 0) { "PASS: all $($links.Count) links valid ($(($links | Where-Object { $_ -notmatch '^(#|style\.css)$' }).Count) real, $(($links | Where-Object { $_ -eq '#' }).Count) placeholders)" } else { "FAIL: $($bad -join ' | ')" }
 [string]::Join("`n", $links)
 ```
 Expected: `PASS: 6 sections`, all links valid; printed list must contain the 4 DOI links, 4 CUMT links (sidebar + About + 2 in Education), 1 advisor link, 1 YCIT link, 1 GitHub, 1 Scholar, 2 mailto, 3 `#` placeholders.
