@@ -185,6 +185,66 @@ footer {
   padding: 0 24px 40px;
 }
 
+/* ---- BibTeX dialog ---- */
+.bibtex-dialog {
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 620px;
+  width: calc(100% - 40px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+.bibtex-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.bibtex-dialog pre {
+  background: #f6f8fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 14px;
+  overflow: auto;
+  max-height: 60vh;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.82em;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.bibtex-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 1.4em;
+  line-height: 1;
+  color: #999;
+  cursor: pointer;
+  padding: 4px 6px;
+}
+
+.bibtex-close:hover {
+  color: #333;
+}
+
+.bibtex-copy {
+  display: block;
+  margin-left: auto;
+  border: 1px solid #2a7ae2;
+  background: #2a7ae2;
+  color: #fff;
+  border-radius: 6px;
+  padding: 6px 16px;
+  font-size: 0.85em;
+  cursor: pointer;
+}
+
+.bibtex-copy:hover {
+  background: #1f63bd;
+}
+
 /* ---- Mobile ---- */
 @media (max-width: 768px) {
   .layout {
