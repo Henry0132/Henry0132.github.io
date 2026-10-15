@@ -185,6 +185,10 @@ footer {
   padding: 0 24px 40px;
 }
 
+footer .visits {
+  margin-top: 4px;
+}
+
 /* ---- BibTeX dialog ---- */
 .bibtex-dialog {
   border: none;
