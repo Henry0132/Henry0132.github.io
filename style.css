@@ -189,6 +189,10 @@ footer .visits {
   margin-top: 4px;
 }
 
+footer .visit-badge {
+  vertical-align: middle;
+}
+
 /* ---- BibTeX dialog ---- */
 .bibtex-dialog {
   border: none;
